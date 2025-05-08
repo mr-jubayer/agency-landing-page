@@ -1,6 +1,7 @@
 import Companies from "./components/companies/Companies";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
+import ServiceOne from "./components/service-one/ServiceOne";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Hero />
       <Companies />
+      <ServiceOne />
     </div>
   );
 }
