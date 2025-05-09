@@ -1,3 +1,8 @@
+import Cart from "../../ui/icons/Cart";
+import Countries from "../../ui/icons/Countries";
+import Uptime from "../../ui/icons/Uptime";
+import Users from "../../ui/icons/Users";
+
 export const statisticsData = [
   {
     id: "s1",
