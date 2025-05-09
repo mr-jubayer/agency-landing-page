@@ -13,7 +13,6 @@ function AccordionItem({ faqItem }) {
                         ? "text-gray-900 bg-white dark:bg-gray-900 dark:text-white"
                         : "text-gray-500 dark:text-gray-400"
                     } 
-          
             flex items-center justify-between w-full py-5 font-medium text-left  border-b border-gray-200 dark:border-gray-700 dark:bg-gray-900 `}
           data-accordion-target={`#accordion-flush-body-${faqItem.id}`}
           aria-expanded="true"
@@ -25,7 +24,7 @@ function AccordionItem({ faqItem }) {
       </h3>
       <div
         id={`accordion-flush-body-${faqItem.id}`}
-        className={!faqItem.isOpen && "hidden"}
+        className={!faqItem.isOpen ? "hidden" : ""}
         aria-labelledby={`accordion-flush-heading-${faqItem.id}`}
       >
         {faqItem.answer}
@@ -33,10 +32,5 @@ function AccordionItem({ faqItem }) {
     </>
   );
 }
-// INACTIVE
-("text-gray-500 dark:text-gray-400");
-
-// ACTIVE
-("text-gray-900 bg-white dark:bg-gray-900 dark:text-white");
 
 export default AccordionItem;
