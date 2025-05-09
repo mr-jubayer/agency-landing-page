@@ -1,5 +1,5 @@
-import SubServiceOne from "./components/SubServiceOne";
-import SubServiceTwo from "./components/SubServiceTwo";
+import SubServiceOne from "./sub-components/SubServiceOne";
+import SubServiceTwo from "./sub-components/SubServiceTwo";
 
 function ServiceOne() {
   return (

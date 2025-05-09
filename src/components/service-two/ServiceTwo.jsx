@@ -1,5 +1,5 @@
-import ServiceTwoTextContent from "./components/ServiceTwoTextContent";
-import Statistics from "./components/Statistics";
+import ServiceTwoTextContent from "./sub-components/ServiceTwoTextContent";
+import Statistics from "./sub-components/Statistics";
 
 function ServiceTwo() {
   return (
