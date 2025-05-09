@@ -5,7 +5,7 @@ import ToTopArrow from "../../ui/icons/ToTopArrow";
 function AccordionItem({ faqItem }) {
   return (
     <>
-      <h3 id="accordion-flush-heading-${1}">
+      <h3 id={`accordion-flush-heading-${faqItem.id}`}>
         <Button
           className={`
                     ${
@@ -15,18 +15,18 @@ function AccordionItem({ faqItem }) {
                     } 
           
             flex items-center justify-between w-full py-5 font-medium text-left  border-b border-gray-200 dark:border-gray-700 dark:bg-gray-900 `}
-          data-accordion-target="#accordion-flush-body-${1}"
+          data-accordion-target={`#accordion-flush-body-${faqItem.id}`}
           aria-expanded="true"
-          aria-controls="accordion-flush-body-${1}"
+          aria-controls={`accordion-flush-body-${faqItem.id}`}
         >
           <span>{faqItem.question}</span>
           {faqItem.isOpen ? <ToTopArrow /> : <BottomArrow />}
         </Button>
       </h3>
       <div
-        id="accordion-flush-body-${1}"
+        id={`accordion-flush-body-${faqItem.id}`}
         className={!faqItem.isOpen && "hidden"}
-        aria-labelledby="accordion-flush-heading-${1}"
+        aria-labelledby={`accordion-flush-heading-${faqItem.id}`}
       >
         {faqItem.answer}
       </div>
